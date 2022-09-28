@@ -13,3 +13,12 @@ def test(request):
 
 def home(request):
   return render(request, 'students/home.html')
+
+def login(request):
+  return render(request, 'students/login.html')
+
+def signup(request):
+  return render(request, "students/signup.html")
+
+def find_roommates(request):
+  return render(request, 'students/filter_roommate.html')
