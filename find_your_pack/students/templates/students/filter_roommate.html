@@ -5,15 +5,146 @@
 <section class='pb-4'>
   <div class='bg-white border rounded-5'>
     <section class='w-100 p-4 justify-content-center'>
+
+      <!-- filters -->
       <div class='row justify-content-center' >
-        <div>
+        <div class='col-md-4' data-mdb-filter='gender'>
           <span class='fa-lg mb-5'>filter: gender</span>
           <div class='form-check mt-3'>
             <input class='form-check-input' type='checkbox' id='inlineCheckbox1' value='male'></input>
-            <label class='form-check-label' for='inlineCheckbox1'>male</lable>
+            <label class='form-check-label' for='inlineCheckbox1'>male</label>
+          </div>
+
+          <div class='form-check'>
+            <input class='form-check-input' type='checkbox' id='inlineCheckbox2' value='female'></input>
+            <label class='form-check-label' for='inlineCheckbox1'>female</label>
+          </div>
+        </div>
+
+        <div class='col-md-4' data-mdb-filter='ethinicity'>
+          <span class='fa-lg mb-5'>filter: gender</span>
+          <div class='form-check mt-3'>
+            <input class='form-check-input' type='checkbox' id='inlineCheckbox1' value='white'></input>
+            <label class='form-check-label' for='inlineCheckbox1'>white</label>
+          </div>
+          <div class='form-check'>
+            <input class='form-check-input' type='checkbox' id='inlineCheckbox2' value='black'></input>
+            <label class='form-check-label' for='inlineCheckbox2'>black or african american</label>
+          </div>
+          <div class='form-check'>
+            <input class='form-check-input' type='checkbox' id='inlineCheckbox3' value='hispanic'></input>
+            <label class='form-check-label' for='inlineCheckbox3'>hispanic</label>
+          </div>
+          <div class='form-check'>
+            <input class='form-check-input' type='checkbox' id='inlineCheckbox4' value='asian'></input>
+            <label class='form-check-label' for='inlineCheckbox4'>asian</label>
+          </div>
+        </div>
+
+        <div class='col-md-4' data-mdb-filter='college'>
+          <span class='fa-lg mb-5'>filter: college</span>
+          <div class='form-check mt-3'>
+            <input class='form-check-input' type='checkbox' id='inlineCheckbox1' value='agriculture_life_sciences'></input>
+            <label class='form-check-label' for='inlineCheckbox1'>agriculture and life sciences</label>
+          </div>
+          <div class='form-check'>
+            <input class='form-check-input' type='checkbox' id='inlineCheckbox2' value='design'></input>
+            <label class='form-check-label' for='inlineCheckbox2'>design</label>
+          </div>
+          <div class='form-check'>
+            <input class='form-check-input' type='checkbox' id='inlineCheckbox3' value='education'></input>
+            <label class='form-check-label' for='inlineCheckbox3'>education</label>
+          </div>
+          <div class='form-check'>
+            <input class='form-check-input' type='checkbox' id='inlineCheckbox4' value='engineering'></input>
+            <label class='form-check-label' for='inlineCheckbox4'>engineering</label>
+          </div>
+          <div class='form-check'>
+            <input class='form-check-input' type='checkbox' id='inlineCheckbox5' value='humanities_social_sciences'></input>
+            <label class='form-check-label' for='inlineCheckbox5'>humanities and social sciences</label>
+          </div>
+          <div class='form-check'>
+            <input class='form-check-input' type='checkbox' id='inlineCheckbox6' value='natural_resources'></input>
+            <label class='form-check-label' for='inlineCheckbox6'>natural resources</label>
+          </div>
+          <div class='form-check'>
+            <input class='form-check-input' type='checkbox' id='inlineCheckbox7' value='management'></input>
+            <label class='form-check-label' for='inlineCheckbox7'>management</label>
+          </div>
+          <div class='form-check'>
+            <input class='form-check-input' type='checkbox' id='inlineCheckbox8' value='sciences'></input>
+            <label class='form-check-label' for='inlineCheckbox8'>sciences</label>
+          </div>
+          <div class='form-check'>
+            <input class='form-check-input' type='checkbox' id='inlineCheckbox9' value='textiles'></input>
+            <label class='form-check-label' for='inlineCheckbox9'>textiles</label>
+          </div>
+          <div class='form-check'>
+            <input class='form-check-input' type='checkbox' id='inlineCheckbox10' value='veterinary_medicine'></input>
+            <label class='form-check-label' for='inlineCheckbox10'>veterinary medicine</label>
           </div>
         </div>
       </div>
+
+      <!-- cards -->
+      <div class='row text-center' id='data_cards'>
+        <div class='col-md-3 mt-3 card' data-gender='male' data-ethinicity='asian' data-college='engineering'>
+          <div class='card-body'>
+            <h5>name</h5>
+            <p>male, asian, engineering</p>
+            <a href='#' class='btn btn-primary'>button</a>
+          </div>
+        </div>
+
+        <div class='col-md-3 mt-3 card' data-gender='female' data-ethinicity='white' data-college='design'>
+          <div class='card-body'>
+            <h5>name</h5>
+            <p>female, white, design</p>
+            <a href='#' class='btn btn-primary'>button</a>
+          </div>
+        </div>
+
+        <div class='col-md-3 mt-3 card' data-gender='male' data-ethinicity='asian' data-college='sciences'>
+          <div class='card-body'>
+            <h5>name</h5>
+            <p>male, asian, sciences</p>
+            <a href='#' class='btn btn-primary'>button</a>
+          </div>
+        </div>
+
+        <div class='col-md-3 mt-3 card' data-gender='female' data-ethinicity='black' data-college='education'>
+          <div class='card-body'>
+            <h5>name</h5>
+            <p>female, black, education</p>
+            <a href='#' class='btn btn-primary'>button</a>
+          </div>
+        </div>
+
+        <div class='col-md-3 mt-3 card' data-gender='male' data-ethinicity='hispanic' data-college='engineering'>
+          <div class='card-body'>
+            <h5>name</h5>
+            <p>male, hispanic, engineering</p>
+            <a href='#' class='btn btn-primary'>button</a>
+          </div>
+        </div>
+
+        <div class='col-md-3 mt-3 card' data-gender='female' data-ethinicity='white' data-college='textiles'>
+          <div class='card-body'>
+            <h5>name</h5>
+            <p>female, white, textiles</p>
+            <a href='#' class='btn btn-primary'>button</a>
+          </div>
+        </div>
+
+        <div class='col-md-3 mt-3 card' data-gender='male' data-ethinicity='black' data-college='management'>
+          <div class='card-body'>
+            <h5>name</h5>
+            <p>male, black, management</p>
+            <a href='#' class='btn btn-primary'>button</a>
+          </div>
+        </div>
+      </div>
+
     </section>
   </div>
 
